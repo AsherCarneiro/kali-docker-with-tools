@@ -1,0 +1,11 @@
+version: '3'
+services:
+    kali-linux:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        ports:
+            - "80:80"
+      - "3000:3000"
+      - "21:21"
+        restart: always
